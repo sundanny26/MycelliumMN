@@ -1,0 +1,9 @@
+Building Myce
+
+See doc/readme-qt.rst for instructions on building Myce QT,
+the intended-for-end-users, nice-graphical-interface, reference
+implementation of Myce.
+
+See doc/build-*.txt for instructions on building myced,
+the intended-for-services, no-graphical-interface, reference
+implementation of Myce.
