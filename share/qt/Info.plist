@@ -20,7 +20,7 @@
             <key>CFBundleTypeRole</key>
             <string>Editor</string>
             <key>CFBundleURLName</key>
-            <string>co.Myce.HarvestPayment</string>
+            <string>co.Myce.MycePayment</string>
             <key>CFBundleURLSchemes</key>
             <array>
               <string>Myce</string>

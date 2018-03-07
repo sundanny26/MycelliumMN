@@ -136,8 +136,8 @@ Value validateaddress(const Array& params, bool fHelp)
 {
     if (fHelp || params.size() != 1)
         throw runtime_error(
-            "validateaddress <Harvestaddress>\n"
-            "Return information about <Harvestaddress>.");
+            "validateaddress <Myceaddress>\n"
+            "Return information about <Myceaddress>.");
 
     CMyceAddress address(params[0].get_str());
     bool isValid = address.IsValid();
@@ -168,8 +168,8 @@ Value validatepubkey(const Array& params, bool fHelp)
 {
     if (fHelp || !params.size() || params.size() > 2)
         throw runtime_error(
-            "validatepubkey <Harvestpubkey>\n"
-            "Return information about <Harvestpubkey>.");
+            "validatepubkey <Mycepubkey>\n"
+            "Return information about <Mycepubkey>.");
 
     std::vector<unsigned char> vchPubKey = ParseHex(params[0].get_str());
     CPubKey pubKey(vchPubKey);
@@ -208,7 +208,7 @@ Value verifymessage(const Array& params, bool fHelp)
 {
     if (fHelp || params.size() != 3)
         throw runtime_error(
-            "verifymessage <Harvestaddress> <signature> <message>\n"
+            "verifymessage <Myceaddress> <signature> <message>\n"
             "Verify a signed message");
 
     string strAddress  = params[0].get_str();
